@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="../resources/icon.png" rel="icon" type="image/x-icon">
+
+    <link href="../styles/about-us.css" rel="stylesheet">
+    <link href="../styles/navbar.css" rel="stylesheet">
+    <link href="../styles/material-design-setup.css" rel="stylesheet">
+    <link href="../styles/common.css" rel="stylesheet">
+
+    <link href="https://fonts.cdnfonts.com/css/are-you-kitten-me" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <script type="importmap">
+    {
+        "imports": 
+        {
+            "@material/web/": "https://esm.run/@material/web/"
+        }
+    }
+    </script>
+    <script type="module">
+        import '@material/web/all.js';
+        import {styles as typescaleStyles} from '@material/web/typography/md-typescale-styles.js';
+        document.adoptedStyleSheets.push(typescaleStyles.styleSheet);
+    </script>
+
+    <title>Pirate Paws</title>
+</head> 
+<body>
+    <div id="navbar">
+        <a href="https://theoceancleanup.com/" title="The Ocean Cleanup website">The Ocean<br>Cleanup</a>
+        <a href="../pages/about us.html" title="About Us" class="active">About<br>Us</a>
+        <a href="../index.html" title="Home Page">Home<br>Page</a>
+        <img src="../resources/icon.png" alt="Icon">
+    </div>
+
+    <h1 id="animated-title" class="hidden"></h1>
+    <script src="../scripts/text-load.js"></script>
+    
+    <p> We are two students that love to create things through code. We created Pirate Paws in hopes of contributing to
+        <a href="https://theoceancleanup.com/">"The ocean cleanup"</a> and helping stop the pollution on a global level. We want to spread awareness
+        as pollution of all sorts is all around us yet many people do not care.
+    </p>
+    
+    <img class="background" src="../resources/background1.gif"> 
+</body>
+</html>

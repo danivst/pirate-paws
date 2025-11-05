@@ -1,0 +1,54 @@
+.header 
+{
+    background-color: #f1f1f1;
+    padding: 30px;
+    text-align: center;
+}
+
+#navbar 
+{
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    background-color: #000000;
+    height: 68px;
+    z-index: 10;
+}
+
+#navbar a 
+{
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    display: block;
+    padding: 14px 10.5px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+#navbar a:hover 
+{
+    background-color: #ddd;
+    color: black;
+}
+
+#navbar a.active 
+{
+    background-color: #ddd;
+    color: black;
+}
+
+#navbar img
+{
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    vertical-align: middle;
+    display: inline-block;
+    margin: 4px;
+}
+
+.content 
+{
+    padding: 16px;
+}

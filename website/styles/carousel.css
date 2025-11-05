@@ -1,0 +1,275 @@
+.gallery 
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.gallery-content 
+{
+    margin-top: 30px;
+    margin-bottom: 80px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    display: flex;          
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+.gallery-text 
+{
+    display: none;
+    flex: 1;               
+}
+
+.gallery-text-mobile
+{
+    display: none;
+    flex: 1;     
+
+    margin-right: 20px;   
+}
+
+.gallery p 
+{
+    font-size: 20px;     
+    font-family: Poppins; 
+}
+
+.carousel 
+{
+    position: relative;
+
+    overflow: hidden;      
+    
+    width: 100%;    
+    max-width: 600px; 
+    max-height: 600px;
+
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 20px;
+    border: 10px solid #117864;
+    border-radius: 8px;
+    box-shadow: 10px 10px 35px -10px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box; 
+    
+    background-color: #ebf5fb;
+}
+
+.carousel-images 
+{
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item 
+{
+    position: relative;
+    display: inline-block;
+
+    min-width: 100%;
+    box-sizing: border-box;
+
+    text-align: center;
+}
+
+.carousel-item img 
+{
+    display: block;
+
+    object-fit: cover;
+    width: 100%; 
+}
+
+.carousel-overlay 
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 10;
+
+    display: flex;
+    transform: translate(-50%, -50%);
+
+    justify-content: space-between;
+    width: 100%;
+    pointer-events: none;
+}
+
+.before-button, .after-button 
+{
+    border: none;
+    border-radius: 50px;
+    padding: 10px;
+    
+    background-color: transparent; 
+    cursor: pointer;
+
+    pointer-events: auto; 
+}
+
+.carousel-dots 
+{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+
+    display: flex;
+    transform: translateX(-50%);   
+}
+
+.dot 
+{
+    display: inline-block;
+
+    transition: background-color 0.3s;
+
+    cursor: pointer;
+
+    margin: 0 5px;
+    border-radius: 50%;
+
+    background-color: #bbb;
+}
+
+.dot.active 
+{
+    background-color: #117864;
+}
+
+/* media settings */
+/* tablets (when height > width) and smaller screens */
+@media (max-width: 840px) 
+{
+    .gallery-content 
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gallery p 
+    {
+        margin: 10px 0;
+
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .carousel 
+    {
+        max-width: 100%;
+    }
+
+    .carousel-item img 
+    {
+        height: auto;
+    }
+}
+
+/* phones */
+@media (max-width: 480px) 
+{
+    .gallery p 
+    {
+        font-size: 18px;
+    }
+
+    .dot
+    { 
+        width: 10px;
+        height: 10px;
+    }
+}
+
+/* phones and smaller screens */
+@media (min-width: 330px) and (max-width: 600px) 
+{
+    .gallery p 
+    {
+        margin-top: 7px;
+    }
+
+    .carousel 
+    {
+        width: 96vw;
+        height: 96vw;
+        max-width: 96vw;
+        max-height: 96vw;
+    }
+
+    .carousel-item img 
+    {
+        height: calc(100% - 145px);
+    }
+}
+
+/* less wider phones */
+@media (max-width: 329px)
+{
+    .gallery p 
+    {
+        margin-top: 7px;
+    }
+
+    .carousel 
+    {
+        width: 100vw;
+        height: 100vw;
+        max-width: 100vw;
+        max-height: 100vw;
+    }
+
+    .carousel-item img 
+    {
+        height: calc(100% - 140px);
+    }
+}
+
+/* tablets and bigger screens */
+@media (min-width: 601px) 
+{
+    .gallery p 
+    {
+        margin-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .carousel-item img 
+    {
+        height: 500px; 
+    }
+
+    .dot
+    {
+        width: 12px;
+        height: 12px;
+    }
+}
+
+/* phones and medium screens */
+@media (max-width: 767px) 
+{
+    .gallery p 
+    {
+        font-size: 18px;
+    }
+}
+
+/* tablets and other slightly bigger srceens */
+@media (min-width: 768px) and (max-width: 1080px) 
+{
+    .gallery p 
+    {
+        font-size: 22px;
+    }
+}
+
+/* big screens */
+@media (min-width: 1081px) 
+{ 
+    .gallery p 
+    {
+        font-size: 25px;
+    }
+}

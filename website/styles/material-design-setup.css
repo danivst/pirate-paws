@@ -1,0 +1,44 @@
+:root
+{
+    --md-sys-color-primary: #117864;
+    --md-sys-color-on-primary: #FFFFFF;
+
+    --md-filled-button-container-shape: 50px;
+    --md-filled-button-label-text-font: Poppins;
+
+    --md-filled-tonal-button-container-shape: 100px;
+    --md-filled-tonal-button-container-height: 60px;
+    --md-filled-tonal-button-label-text-font: Poppins;
+    --md-filled-tonal-button-container-color: #117864;
+    --md-filled-tonal-button-label-text-color: #FFFFFF;
+
+    --md-text-button-container-shape: 100px;
+    --md-text-button-container-height: 50px;
+    --md-text-button-label-text-font: Poppins;
+    --md-text-button-label-text-size: 50px;
+    --md-text-button-label-text-color: #117864;
+
+    --md-divider-color: #2176ae;
+}
+
+/* media settings */
+/* phones and medium screens */
+@media (max-width: 767px) 
+{
+    :root
+    {
+        --md-filled-button-container-height: 50px;
+        --md-filled-button-label-text-size: 20px;
+    }
+}
+
+/* tablets and other bigger srceens */
+@media (min-width: 768px)
+{
+    :root
+    {
+        --md-filled-button-container-height: 100px;
+        --md-filled-button-label-text-line-height: 1.2;
+        --md-filled-button-label-text-size: 30px;
+    }
+}

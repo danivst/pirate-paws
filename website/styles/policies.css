@@ -1,0 +1,89 @@
+body
+{
+    margin-top: 0px;;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+
+    background-color: #ebf5fb;
+
+    font-size: 20px;  
+    font-family: Poppins;
+}
+
+h2, h3, h4
+{
+    margin-top: 35px;
+    margin-bottom: 5px;
+}
+
+p
+{
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+p a, p a:active, p a:hover, p a:visited
+{
+    color: #2176ae;
+}
+
+ul, li
+{
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+li a, li a:active, li a:hover, li a:visited
+{
+    color: #2176ae;
+}
+
+#text-container
+{
+    margin-top: 50px;;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 50px;
+
+    line-height: 40px;
+}
+
+#email
+{
+    color: #2176ae;
+}
+
+/* scrollbar settings */
+@supports (scrollbar-color: #ebf5fb #2176ae)
+{
+    *
+    {
+        scrollbar-color: #ebf5fb #2176ae;
+    }
+}
+
+/* media settings */
+/* phones */
+@media (max-width: 480px)
+{
+    .text
+    {        
+        margin-top: 30px;
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-bottom: 70px;
+    }
+}
+
+/* wider screens */
+@media (min-width: 481px)
+{
+    .text
+    {
+        margin-top: 50px;
+        margin-left: 100px;
+        margin-right: 100px;
+        margin-bottom: 50px;
+    }
+}

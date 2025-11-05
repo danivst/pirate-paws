@@ -1,0 +1,10 @@
+body
+{
+    background-color: #59c5ff;
+}
+
+#animated-title 
+{
+    height: 50px;
+    overflow: hidden;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="../resources/images/icon.png" rel="icon" type="image/x-icon">
+
+    <link href="../styles/policies.css" rel="stylesheet">
+    <link href="../styles/navbar.css" rel="stylesheet">
+    <link href="../styles/bottom-bar.css" rel="stylesheet">
+    <link href="../styles/button-toc.css" rel="stylesheet">
+    <link href="../styles/button-top.css" rel="stylesheet">
+    <link href="../styles/material-design-setup.css" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+    <script type="importmap">
+    {
+        "imports": 
+        {
+            "@material/web/": "https://esm.run/@material/web/"
+        }
+    }
+    </script>
+
+    <script type="module">
+        import '@material/web/all.js';
+        import {styles as typescaleStyles} from '@material/web/typography/md-typescale-styles.js';
+        document.adoptedStyleSheets.push(typescaleStyles.styleSheet);
+    </script>
+
+    <script src="../scripts/floating-button-toc.js"></script>
+    <script src="../scripts/floating-button-top.js"></script>
+    <script src="../scripts/fix-floating-buttons.js"></script>
+    <script src="../scripts/bottom-bar-adjustment.js"></script>
+    <script src="../scripts/load-privacy-policy.js"></script>
+
+    <title>Pirate Paws Privacy Policy</title>
+</head> 
+<body>
+    <div id="navbar">
+        <a href="about-us.html" title="About Us">About<br>Us</a>
+        <a href="../index.html" title="Home Page">Home<br>Page</a>
+        <img src="../resources/images/icon.png" alt="Icon">
+    </div>
+
+    <div id="text-container"> </div>
+
+    <div class="visible" id="toc-button">
+        <img src="../resources/images/the_ocean_cleanup.jpg" alt="The Ocean Cleanup" class="button-icon">
+        <span class="button-text">Learn<br>More</span>
+    </div>
+    
+    <div class="fixed-button" id="top-button"> <md-filled-tonal-button> ^ </md-filled-tonal-button> </div>
+
+    <div id="bottom-bar">
+        <a href="privacy-policy.html" id="privacy-policy">Privacy Policy</a> 
+        <span id="line"> | </span>
+        <a href="terms-and-conditions.html" id="tos">Terms and Conditions</a>
+        <br> <span id="copyright"> 2025 © <a href="../index.html"> Pirate Paws </a> </span>
+    </div>
+</body>
+</html>

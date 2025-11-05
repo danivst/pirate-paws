@@ -1,0 +1,74 @@
+@import url('https://fonts.cdnfonts.com/css/are-you-kitten-me');
+
+body
+{
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.hidden 
+{
+    opacity: 0;
+}
+
+h1
+{
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Are You Kitten Me', sans-serif;      
+    margin-top: 10px;
+}
+
+a
+{
+    font-family: 'Are You Kitten Me', sans-serif;                                          
+}
+ 
+p
+{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+p a
+{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+a:link 
+{
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited 
+{
+    color: pink;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover 
+{
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+a:active 
+{
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.background 
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+    width: 100%;
+    height: auto;
+}

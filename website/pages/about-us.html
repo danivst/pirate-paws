@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="../resources/images/icon.png" rel="icon" type="image/x-icon">
+
+    <link href="../styles/common.css" rel="stylesheet">
+    <link href="../styles/navbar.css" rel="stylesheet">
+    <link href="../styles/bottom-bar.css" rel="stylesheet">
+    <link href="../styles/button-toc.css" rel="stylesheet">
+    <link href="../styles/button-top.css" rel="stylesheet">
+    <link href="../styles/material-design-setup.css" rel="stylesheet">
+    <link href="../styles/about-us.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+    <script type="importmap">
+    {
+        "imports": 
+        {
+            "@material/web/": "https://esm.run/@material/web/",
+            "three": "https://cdn.jsdelivr.net/npm/three@0.175.0/build/three.module.js",
+            "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.175.0/examples/jsm/"
+        }
+    }
+    </script>
+
+    <script type="module">
+        import '@material/web/all.js';
+        import {styles as typescaleStyles} from '@material/web/typography/md-typescale-styles.js';
+        document.adoptedStyleSheets.push(typescaleStyles.styleSheet);
+    </script>
+
+    <script src="../scripts/floating-button-toc.js"></script>
+    <script src="../scripts/email-click.js"></script>
+    <script src="../scripts/bottom-bar-adjustment.js"></script>
+    <script type="module" src="../scripts/scroll-about-us.js"></script>
+    <script type="module" src="../scripts/model-load.js"></script>
+
+    <title>Pirate Paws</title>
+</head> 
+<body>
+    <div id="navbar">
+        <a href="about-us.html" title="About Us" class="active">About<br>Us</a>
+        <a href="../index.html" title="Home Page">Home<br>Page</a>
+        <img src="../resources/images/icon.png" alt="Icon">
+    </div> 
+
+    <div id="catCanvasContainer">
+        <canvas id="catCanvas"></canvas>
+    </div>
+
+    <div class="paragraphs">
+        <section class="paragraph active about-the-game">
+            <div class="content">
+                <div id="titleL"> <h3> The game </h3> </div>
+                <md-divider inset></md-divider>
+                <p> 
+                    Pirate Paws is a cozy, adventure-filled game for Android, where you step into the paws of a mischievous fisher-pirate cat. 
+                    Set sail across vibrant seas and explore a variety of beautiful, unique islands.
+                    As you navigate the open ocean, one of the crucial tasks you have to complete is collecting the garbage that appears in the ocean, helping achieve a cleaner environment.
+                    Alongside that, you'll catch fish, and sell your bounty to earn coins.
+                    Use your earnings to unlock fun upgrades, customize your boat, and gain unique perks to make your adventures even more exciting.
+                    With relaxing gameplay, stunning environments, and a heartwarming story, Pirate Paws offers an experience that combines the joys of exploration 
+                    with not only the thrill of discovery, but also the ability to protect and clean the ocean, making every adventure feel meaningful.
+                </p>
+            </div>
+        </section>
+    
+        <section class="paragraph about-the-team">
+            <div class="content">
+                <div id="titleR"> <h3> The team </h3> </div>
+                <md-divider inset></md-divider>
+                <p> 
+                    At the heart of Pirate Paws is a small but passionate team of two students, dedicated to creating a cozy experience for players. 
+                    We share love for crafting engaging games that bring joy to people's lives and aim to create a game that combines relaxing exploration with meaningful environmental impact. 
+                    We believe in the power of games to not only entertain but to inspire change and bring awareness to important causes, like ocean conservation.
+                    Both of us poured our creativity, skills, and love for gaming into every aspect of Pirate Paws—from the assets creation to the relaxing gameplay mechanics. 
+                    We hope you enjoy playing as much as we enjoyed making it! <br>
+                    You can reach out to us in case of inquiries at: <span id="email"> <b> pirate-paws@gmail.com </b> </span> 
+                </p>
+            </div>
+        </section>
+        
+        <section class="paragraph missions">
+            <div class="content">
+                <div id="titleL"> <h3> The cause </h3> </div>
+                <md-divider inset></md-divider>
+                <p> 
+                    Our mission is to spread awareness about the importance of environmental care and to show that even the smallest actions, like picking up a piece of garbage 
+                    from the sidewalk or cleaning up the ocean, can make a big difference. 
+                    We believe that every action counts, and through our game, we hope to inspire players to take part in making the world a cleaner, greener place.
+                    We are proud to support The Ocean Cleanup and their mission to reduce ocean pollution, and we aim to engage children and families by creating a fun, 
+                    interactive experience that highlights the importance of protecting our oceans. 
+                    By raising awareness through gameplay, we hope to encourage future generations to take action and become advocates for a healthier planet.
+                    Together, we can make waves of change—one small step at a time.
+                </p>
+            </div>
+        </section>
+    </div>
+    
+    <div class="visible" id="toc-button">
+        <img src="../resources/images/the_ocean_cleanup.jpg" alt="The Ocean Cleanup" class="button-icon">
+        <span class="button-text">Learn<br>More</span>
+    </div>
+
+    <div class="visible" id="top-button"> <md-filled-tonal-button> ^ </md-filled-tonal-button> </div>
+
+    <div id="bottom-bar">
+        <a href="privacy-policy.html" id="privacy-policy">Privacy Policy</a> 
+        <span id="line"> | </span>
+        <a href="terms-and-conditions.html" id="tos">Terms and Conditions</a>
+        <br> <span id="copyright"> 2025 © <a href="../index.html"> Pirate Paws </a> </span>
+    </div>
+</body>
+</html>

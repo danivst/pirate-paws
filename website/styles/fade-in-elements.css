@@ -1,0 +1,107 @@
+.fade-in-title span 
+{    
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(20px);
+
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.fade-in-title span.visible 
+{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#additional-text 
+{
+    display: block;
+    opacity: 0;
+    transform: translateY(20px);
+
+    transition: opacity 1s ease, transform 1s ease;
+
+    font-family: Vollkorn;
+    text-align: center;
+}
+
+#additional-text.visible 
+{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#button-container 
+{
+    position: relative;     
+
+    display: flex;
+
+    width: 100%; 
+
+    justify-content: space-between;      
+    align-items: center;                                                             
+}
+
+.animated-button 
+{
+    opacity: 0;
+    transform: translateY(0);
+
+    transition: opacity 0.5s ease, transform 0.5s ease;
+
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+
+    cursor: pointer;    
+}
+
+.animated-button.visible 
+{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* media settings */
+/* phones with less wider screens */
+@media (max-width: 390px)
+{
+    .fade-in-title
+    {
+        font-size: 90px;
+    }
+
+    #button-container
+    {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+/* phones and medium screens */
+@media (max-width: 767px) 
+{
+    #additional-text
+    {
+        font-size: 30px;
+    }
+}
+
+/* tablets and other slightly bigger srceens */
+@media (min-width: 768px) and (max-width: 1024px) 
+{
+    #additional-text
+    {
+        font-size: 40px;
+    }
+}
+
+/* big screens */
+@media (min-width: 1025px) 
+{ 
+    #additional-text
+    {
+        font-size: 50px;
+    }
+}

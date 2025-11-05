@@ -1,0 +1,200 @@
+html
+{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body
+{
+    margin-top: 0px;;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+
+    background-color: #ebf5fb;
+
+    font-size: 20px;  
+    font-family: Poppins;
+}
+
+img
+{
+    font-family: Poppins;
+}
+
+h1
+{
+    margin-bottom: 20px;
+
+    font-family: Poppins;
+    text-align: center;
+}
+
+h2
+{
+    font-family: Poppins;
+    text-align: center;
+}
+
+h3
+{
+    margin-top: 30px;
+    margin-bottom: 10px;
+
+    font-family: Poppins;
+}
+
+p
+{
+    margin-top: 30px;
+    margin-bottom: 60px;
+    margin-left: 10px;
+    margin-right: 10px;
+    
+    font-family: Poppins; 
+    text-align: center;
+    color: #000807;
+}
+
+p a
+{
+    font-family: Poppins;
+}
+
+a:link 
+{    
+    background-color: transparent;
+
+    text-decoration: none;
+    color: #ebf5fb;
+}
+
+a:visited 
+{
+    background-color: transparent;
+
+    text-decoration: none;
+    color: #ebf5fb;
+}
+
+a:hover 
+{
+    background-color: transparent;
+
+    text-decoration: underline;
+    color: #ebf5fb;
+}
+
+a:active 
+{
+    background-color: transparent;
+
+    text-decoration: underline;
+    color: #ebf5fb;
+}
+
+.hidden 
+{
+    display: none;
+}
+
+.visible 
+{
+    display: block;
+    opacity: 1;
+    transition: opacity 1s ease;
+}
+
+#titleL
+{
+    margin-left: 10px;
+    text-align: left;
+}
+
+#titleR
+{
+    margin-right: 10px;
+    text-align: right;
+}
+
+/* scrollbar settings */
+@supports (scrollbar-color: #ebf5fb #2176ae)
+{
+    *
+    {
+        scrollbar-color: #ebf5fb #2176ae;
+    }
+}
+
+/* media settings */
+/* phones and medium screens */
+@media (max-width: 767px) 
+{
+    h1
+    {
+        font-size: 100px;
+    }
+
+    h2
+    {
+        font-size: 60px;
+    }
+
+    h3
+    {
+        font-size: 50px;
+    }
+
+    p
+    {
+        font-size: 18px;     
+    }
+}
+
+/* tablets and other slightly bigger srceens */
+@media (min-width: 768px) and (max-width: 1080px) 
+{
+    h1
+    {
+        font-size: 140px;
+    }
+
+    h2
+    {
+        font-size: 90px;
+    }
+
+    h3
+    {
+        font-size: 60px;
+    }
+
+    p
+    {
+        font-size: 22px;     
+    }
+}
+
+/* big screens */
+@media (min-width: 1081px) 
+{ 
+    h1
+    {
+        font-size: 150px;
+    }
+
+    h2
+    {
+        font-size: 100px;
+    }
+
+    h3
+    {
+        font-size: 70px;
+    }
+
+    p
+    {
+        font-size: 25px;     
+    }
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="../resources/icon.png" rel="icon" type="image/x-icon">
+
+    <link href="../styles/index.css" rel="stylesheet">
+    <link href="../styles/navbar.css" rel="stylesheet">
+    <link href="../styles/material-design-setup.css" rel="stylesheet">
+    <link href="../styles/common.css" rel="stylesheet">
+
+    <link href="https://fonts.cdnfonts.com/css/are-you-kitten-me" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <script type="importmap">
+    {
+        "imports": 
+        {
+            "@material/web/": "https://esm.run/@material/web/"
+        }
+    }
+    </script>
+    <script type="module">
+        import '@material/web/all.js';
+        import {styles as typescaleStyles} from '@material/web/typography/md-typescale-styles.js';
+        document.adoptedStyleSheets.push(typescaleStyles.styleSheet);
+    </script>
+
+    <title>Pirate Paws</title>
+</head> 
+<body>
+    <div id="navbar">
+        <a href="https://theoceancleanup.com/" title="The Ocean Cleanup website">The Ocean<br>Cleanup</a>
+        <a href="../pages/about us.html" title="About Us">About<br>Us</a>
+        <!-- another way: <a href="index.html" id="home">Home</a> 
+            css: 
+            #navbar #home
+            {
+                padding-top: 24px; 
+                padding-bottom: 22px;
+            }
+        -->
+        <a href="index.html" title="Home Page" class="active">Home<br>Page</a>
+        <img src="../resources/icon.png" alt="Icon">
+    </div>
+
+    <img class="background" src="../resources/background.gif">
+
+    <h1 id="animated-title" class="hidden"></h1>
+    <script src="../scripts/welcome-text-load.js"></script>
+
+    <p> Pirate Paws is a cozy mobile game made for Android. 
+        In it you play as a fisher-pirate cat - explore the ocean (and clean it too!) and all the different islands you can discover.
+        Your goal is to catch fish, then sell them and collect money in order to buy different types of upgrades and perks.
+        Discover the world of Pirate Paws to find out more! 
+    </p>
+        
+    <div class="gallery-container">
+        <md-text-button class="previous" title="Previous"> < </md-text-button>
+        <div class="gallery">
+          <div class="first-page">
+            <img src="../resources/main-character.png" alt="main character">
+            <p> The main character is a cute little cat! </p>
+          </div>
+          <div class="second-page">
+            <div class="image-container">
+                <img src="../resources/islands.png" alt="islands">
+            </div>
+            <div class="image-container">
+                <img src="../resources/upgrades-island.png" alt="upgrades-island">
+            </div>
+            <div class="image-container">
+                <img src="../resources/shop-island.png" alt="shop-island">
+            </div>
+            <div class="image-container">
+                <img src="../resources/mushroom-island.png" alt="mushroom-island">
+            </div>
+            <p> Discover the islands. </p>
+          </div>
+          <div class="third-page">
+            <img src="../resources/in-game.png" alt="in-game">
+            <p> In-game view of the game. </p>
+          </div>
+        </div>
+        <md-text-button class="next" title="Next"> > </md-text-button>
+    </div>
+      
+    <script src="../scripts/scroll.js"></script>
+
+    <a href="../resources/icon.png" download="untitled.png" title="Download"><md-filled-button>Download</md-elevated-button></a>
+</body>
+</html>

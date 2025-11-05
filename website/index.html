@@ -1,1 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link href="../resources/images/icon.png" rel="icon" type="image/x-icon">
+
+    <link href="../styles/common.css" rel="stylesheet">
+    <link href="../styles/navbar.css" rel="stylesheet">
+    <link href="../styles/bottom-bar.css" rel="stylesheet">
+    <link href="../styles/button-toc.css" rel="stylesheet">
+    <link href="../styles/button-top.css" rel="stylesheet">
+    <link href="../styles/scroll.css" rel="stylesheet">
+    <link href="../styles/material-design-setup.css" rel="stylesheet">
+    <link href="../styles/carousel.css" rel="stylesheet">
+    <link href="../styles/popup.css" rel="stylesheet">
+    <link href="../styles/fade-in-elements.css" rel="stylesheet">
+    <link href="../styles/index.css" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script type="importmap">
+    {
+        "imports": 
+        {
+            "@material/web/": "https://esm.run/@material/web/"
+        }
+    }
+    </script>
+
+    <script type="module">
+        import '@material/web/all.js';
+        import {styles as typescaleStyles} from '@material/web/typography/md-typescale-styles.js';
+        document.adoptedStyleSheets.push(typescaleStyles.styleSheet);
+    </script>
+
+    <script src="../scripts/fade-in.js"></script>
+    <script src="../scripts/download-popup.js"></script>
+    <script src="../scripts/scroll-index.js"></script>
+    <script src="../scripts/gallery-display.js"></script>
+    <script src="../scripts/carousel.js"></script>
+    <script src="../scripts/bottom-bar-adjustment.js"></script>
+    <script type="module" defer src="../scripts/floating-button-toc.js"></script>
+    <script type="module" defer src="../scripts/floating-button-top.js"></script>
+    <script type="module" defer src="../scripts/fix-floating-buttons.js"></script>
+
+    <title>Pirate Paws</title>
+</head> 
+<body>
+    <div id="navbar">
+        <a href="../pages/about-us.html" title="About Us">About<br>Us</a>
+        <a href="index.html" title="Home Page" class="active">Home<br>Page</a>
+        <img src="../resources/images/icon.png" alt="Icon">
+    </div>
+
+    <div id="content-container">
+        <h1 class="fade-in-title">
+            <span> Pir<i class="fa" id="paw">&#xf1b0;</i>te </span>
+            <span> Paws </span>
+        </h1>
+    
+        <div class="hidden" id="additional-text"> Explore, fish and clean the ocean as a pirate cat! </div>
+    
+        <div class="hidden" id="button-container">
+            <a title="Download" class="animated-button" id="download" onclick="openPopup()"> <md-filled-button> Download </md-filled-button> </a>
+            <a title="Learn more" class="animated-button" id="learn-more" onclick="scrollToSection()"> <md-filled-button> Learn more </md-filled-button> </a>
+        </div>
+
+        <div id="overlay" onclick="closePopup()"></div> <!-- dark overlay -->
+
+        <div id="popup">
+            <h3> Terms and Conditions </h3>
+            <p> 
+                In order to download and play <b> Pirate Paws </b> you need to read and agree to the <a href="../pages/terms-and-conditions.html"> Terms and Contitions</a> first. 
+                If you do not agree, you may not proceed. <br>
+            </p>
+            <label>
+                <md-checkbox id="checkbox" touch-target="wrapper" checked onchange="toggleDownloadButton()"> </md-checkbox> 
+                <span id="text" onclick="toggleDownloadButton()"> I agree to the <a href="../pages/terms-and-conditions.html"> Terms and Conditions</a>. </span>
+            </label> 
+            <div class="button-container">
+                <a title="Back" id="back" onclick="closePopup()"> <md-filled-button> Back </md-filled-button></a>
+                <a title="Download" id="game-download" class="disabled" diabled onclick="checkAgreement()"> <md-filled-button> Download </md-filled-button> </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-break"></div>
+
+    <div class="welcome" id="target">
+        <h2> Welcome to Pirate Paws! </h2>
+    </div>
+     
+    <div class="description">
+        <div id="titleL"> <h3> Description </h3> </div>
+        <md-divider inset></md-divider>
+        <p> Pirate Paws is a cozy mobile game made for Android. 
+            In it you play as a fisher-pirate cat - explore the ocean (and clean it too!) and all the different islands you can discover.
+            Your goal is to catch fish, then sell them and collect money in order to buy different types of upgrades and perks.
+            Discover the world of Pirate Paws to find out more! 
+        </p>
+    </div>
+
+    <div class="gallery">
+        <div id="titleR"> <h3> Gallery </h3> </div>
+        <md-divider inset></md-divider>
+        <div class="gallery-content">
+            <div class="gallery-text-mobile">
+                <p> Explore the visual journey of our game through a curated selection of images. 
+                    Each picture captures a unique moment, environment, or feature from within the game. 
+                    Dive into the world we've created and get a glimpse of what awaits you in the game!
+                </p>
+            </div>
+            <div class="carousel">
+                <div class="carousel-overlay">
+                    <md-text-button class="before-button"> <b> < </b> </md-text-button>
+                    <md-text-button class="after-button"> <b> > </b> </md-text-button>
+                </div>
+                <div class="carousel-images">
+                    <div class="carousel-item active">
+                        <img src="../resources/images/main-character.png" alt="Main Character">
+                        <p> Dive into the world as a cat. </p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../resources/images/islands.png" alt="Islands">
+                        <p> Discover the islands. </p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../resources/images/upgrades-island.png" alt="Upgrades Island">
+                        <p> Upgrade your equipment. </p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../resources/images/shop-island.png" alt="Shop Island">
+                        <p> Visit the shop. </p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../resources/images/mushroom-island.png" alt="Mushroom Island">
+                        <p> Explore the mushroom island. </p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../resources/images/main-menu.jpg" alt="Main Menu">
+                        <p> Main menu of the game. </p>
+                    </div>
+                </div>
+                <div class="carousel-dots">
+                    <span class="dot" data-index="0"></span>
+                    <span class="dot" data-index="1"></span>
+                    <span class="dot" data-index="2"></span>
+                    <span class="dot" data-index="3"></span>
+                    <span class="dot" data-index="4"></span>
+                    <span class="dot" data-index="5"></span>
+                </div>
+            </div>
+            <div class="gallery-text">
+                <p> Explore the visual journey of our game through a curated selection of images. 
+                    Each picture captures a unique moment, environment, or feature from within the game. 
+                    Dive into the world we've created and get a glimpse of what awaits you in the game!
+                </p>
+            </div>  
+        </div>
+    </div>
+    
+    <div class="hidden" id="toc-button">
+        <img src="../resources/images/the_ocean_cleanup.jpg" alt="The Ocean Cleanup" class="button-icon">
+        <span class="button-text">Learn<br>More</span>
+    </div>
+    
+    <div class="fixed-button" id="top-button"> <md-filled-tonal-button> ^ </md-filled-tonal-button> </div>
+    
+    <div id="bottom-bar">
+        <a href="../pages/privacy-policy.html" id="privacy-policy">Privacy Policy</a> 
+        <span id="line"> | </span>
+        <a href="../pages/terms-and-conditions.html" id="tos">Terms and Conditions</a>
+        <br> <span id="copyright"> 2025 © <a href="index.html"> Pirate Paws </a> </span>
+    </div>
+</body>
+</html>

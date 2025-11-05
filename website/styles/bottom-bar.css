@@ -1,0 +1,60 @@
+#bottom-bar 
+{
+    left: 0;
+    right: 0;
+
+    padding: 4px;
+
+    background-color: #2176ae;
+
+    font-family: Poppins;
+    text-align: center;        
+    color: white; 
+}
+
+#bottom-bar a, #bottom-bar a:visited, #bottom-bar a:active, #bottom-bar a:hover
+{
+    text-decoration: underline; 
+    color: #ebf5fb;        
+}
+
+#line
+{
+    font-size: 20px;     
+}
+
+#copyright
+{
+    font-size: 15px;  
+    font-family: Poppins;
+}
+
+/* media settings */
+/* phones */
+@media (max-width: 600px) 
+{
+    #privacy-policy, #tos 
+    {
+        text-align: center;
+        font-size: 17px;     
+    }
+
+    #line
+    {
+        font-size: 17px;     
+    }
+
+    #copyright
+    {
+        font-size: 13px;
+    }
+}
+
+/* tablets and bigger screens */
+@media (min-width: 601px) 
+{
+    #privacy-policy, #tos 
+    {
+        font-size: 20px;     
+    }
+}

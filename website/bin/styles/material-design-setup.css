@@ -1,0 +1,11 @@
+:root
+{
+    --md-filled-button-container-shape: 0px;
+    --md-filled-button-label-text-font: 'Are You Kitten Me', sans-serif;
+    --md-filled-button-label-text-size: 20px;
+    --md-sys-color-primary: #006A6A;
+    --md-sys-color-on-primary: #FFFFFF;
+
+    --md-text-button-label-text-font: 'Are You Kitten Me', sans-serif;
+    --md-sys-color-primary: #006A6A;
+}
