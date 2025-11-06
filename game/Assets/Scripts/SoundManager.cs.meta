@@ -1,0 +1,26 @@
+fileFormatVersion: 2
+guid: 3c9f1335bbceab1438e8cdc8a9e446d8
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - mixer: {fileID: 24100000, guid: 39660f97aeec1a04d8c0fa892fa17d84, type: 2}
+  - Source: {fileID: 8530740074592345163, guid: fee5c658a91d0e24786b8195e730851f,
+      type: 3}
+  - master: {fileID: 24300002, guid: 39660f97aeec1a04d8c0fa892fa17d84, type: 2}
+  - musicMixer: {fileID: -5404943886495414075, guid: 39660f97aeec1a04d8c0fa892fa17d84,
+      type: 2}
+  - ambientSounds: {fileID: 8300000, guid: 82eb013cf4780ec438468333f3b67748, type: 3}
+  - music: {fileID: 8300000, guid: 13c2379ca8318454fb95713861d91fe7, type: 3}
+  - uiClick: {fileID: 8300000, guid: 6f6efb4625f6aff4b97f2398e5188752, type: 3}
+  - levelUp: {fileID: 8300000, guid: c39aeed95a28e1241accb81e93f70f44, type: 3}
+  - trashSound: {fileID: 8300000, guid: b9a0aba6fac31844b9b238f428f4bcf8, type: 3}
+  - buySound: {fileID: 8300000, guid: 37e934222e4eed24fbe23440b070cddb, type: 3}
+  - recycleSound: {fileID: 8300000, guid: 312dc60f689c64447b89bd91840080aa, type: 3}
+  - sellSound: {fileID: 8300000, guid: aa1cc68af9be39f40a5ba11d59085504, type: 3}
+  - catchSound: {fileID: 8300000, guid: c7a9f9f4033312e43b4431981a680155, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
