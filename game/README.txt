@@ -1,12 +1,11 @@
-Cat's Quest изработена от Анатоли Димитров и Даниела Станчева
+Pirate Paws изработена от @Kartofi и @danivst
 
 Инструкции за конфигуриране и работа със Source Code:
 
-1. Проекта в Unity
-За да може да се отвори успешно проекта в Unity е нужно версията да е Unity 2022.3.51f1. (https://unity.com/releases/editor/whats-new/2022.3.51).
+1. Проектът в Unity
+За да може да се отвори успешно проекта в Unity, е нужно версията да е Unity 2022.3.51f1. (https://unity.com/releases/editor/whats-new/2022.3.51).
 
 Ето инструкции за добавяне на проект в Unity - https://support.unity.com/hc/en-us/articles/4402520287124-How-do-I-add-a-project-saved-on-my-computer-into-the-Unity-Hub
-Като се използва папката "Cat's Quest".
+Като се използва папката "game".
 
 !!! При първо отваряне на проекта се зареждат всички библиотеки, което отнема време, в зависимост от бързодействието на компютъра времето варира !!!
-
